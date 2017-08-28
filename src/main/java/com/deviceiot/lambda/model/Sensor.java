@@ -1,7 +1,6 @@
 package com.deviceiot.lambda.model;
 
-import java.util.*;
-
+import com.fasterxml.jackson.annotation.*;
 import lombok.*;
 
 /**
@@ -21,6 +20,7 @@ public class Sensor {
 
     private Float tempreature;
 
-    private Date lastModifiedDate;
+    @JsonProperty("$currentDate")
+    private SensorDate currentDate;
 
 }
