@@ -18,4 +18,6 @@ public class SensorReported {
 
     private List<Sensor> sensors;
 
+    private String sourcesystem;
+
 }
